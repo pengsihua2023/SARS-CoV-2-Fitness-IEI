@@ -1,1 +1,2 @@
 # VFIEI-SARS-cov-2
+This study investigates the evolutionary fitness and immune escape status of SARS-CoV-2 variant over time, utilizing a protein language model. By retrospectively analyzing viral variant sequences from January 2020 to May 2024, we provide insights into the Variants fitness and immune evasion history. Our findings highlight significant temporal and geographical variations, emphasizing the role of protein language models in understanding viral evolution.
