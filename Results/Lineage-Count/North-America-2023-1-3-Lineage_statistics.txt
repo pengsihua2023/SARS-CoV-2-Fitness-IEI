@@ -1,0 +1,5 @@
+Total sequences: 8895
+Total unique lineages: 706
+Dominant lineage: XBB.1.5
+Dominant lineage count: 2105
+Dominant lineage percentage: 23.66%

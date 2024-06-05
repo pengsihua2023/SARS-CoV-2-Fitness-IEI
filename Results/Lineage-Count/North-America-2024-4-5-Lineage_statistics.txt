@@ -1,0 +1,5 @@
+Total sequences: 543
+Total unique lineages: 46
+Dominant lineage: JN.1
+Dominant lineage count: 85
+Dominant lineage percentage: 15.65%

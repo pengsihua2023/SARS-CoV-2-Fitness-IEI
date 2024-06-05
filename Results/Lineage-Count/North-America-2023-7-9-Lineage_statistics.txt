@@ -1,0 +1,5 @@
+Total sequences: 5797
+Total unique lineages: 629
+Dominant lineage: FL.1.5.1
+Dominant lineage count: 318
+Dominant lineage percentage: 5.49%

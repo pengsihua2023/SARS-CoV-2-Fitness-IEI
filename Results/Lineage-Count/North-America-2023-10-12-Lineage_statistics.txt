@@ -1,0 +1,5 @@
+Total sequences: 6486
+Total unique lineages: 534
+Dominant lineage: HV.1
+Dominant lineage count: 957
+Dominant lineage percentage: 14.75%
