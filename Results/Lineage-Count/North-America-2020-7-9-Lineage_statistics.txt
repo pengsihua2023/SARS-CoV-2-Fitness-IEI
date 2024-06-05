@@ -1,0 +1,5 @@
+Total sequences: 1159
+Total unique lineages: 169
+Dominant lineage: B.1
+Dominant lineage count: 193
+Dominant lineage percentage: 16.65%

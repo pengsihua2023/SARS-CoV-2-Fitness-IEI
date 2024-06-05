@@ -1,0 +1,5 @@
+Total sequences: 21392
+Total unique lineages: 203
+Dominant lineage: AY.44
+Dominant lineage count: 2466
+Dominant lineage percentage: 11.53%
