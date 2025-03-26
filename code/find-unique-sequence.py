@@ -1,26 +1,26 @@
 from Bio import SeqIO
 from collections import OrderedDict
 
-# 输入和输出文件名
+# Input and output file names
 input_file = "All-S-Protein-from-2020-2024.fasta"
 output_file = "All-S-Protein-from-2020-2024-unique.fasta"
 
-# 使用OrderedDict来存储唯一的序列，保持原始顺序
+# Use OrderedDict to store unique sequences while preserving the original order
 unique_sequences = OrderedDict()
 
-# 读取FASTA文件并去重
+# Read the FASTA file and remove duplicates
 with open(input_file, "r") as handle:
     for record in SeqIO.parse(handle, "fasta"):
-        # 将序列转换为字符串作为键，这样可以检测完全相同的序列
+        # Convert the sequence to a string as the key to detect identical sequences
         seq_str = str(record.seq)
-        # 如果序列还没出现过，就添加到字典中
+        # If the sequence hasn’t appeared before, add it to the dictionary
         if seq_str not in unique_sequences:
             unique_sequences[seq_str] = record
 
-# 将独特的序列写入新文件
+# Write the unique sequences to a new file
 with open(output_file, "w") as output_handle:
     SeqIO.write(unique_sequences.values(), output_handle, "fasta")
 
-# 打印一些统计信息
-print(f"原始序列总数: {len(list(SeqIO.parse(input_file, 'fasta')))}")
-print(f"独特序列总数: {len(unique_sequences)}")
+# Print some statistical information
+print(f"Total number of original sequences: {len(list(SeqIO.parse(input_file, 'fasta')))}")
+print(f"Total number of unique sequences: {len(unique_sequences)}")
