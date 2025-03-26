@@ -1,1 +1,1 @@
-## data
+## Wild S protein sequence
