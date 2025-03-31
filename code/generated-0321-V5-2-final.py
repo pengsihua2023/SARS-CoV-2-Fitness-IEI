@@ -9,15 +9,14 @@ sequence_length = len(wildtype_seq)  # Assumed to be 1273 amino acids
 # ----------------------------
 # Parameter adjustment (based on the latest literature)
 # ----------------------------
-simulation_years = 4.375            # Simulation time span (years)
-total_mutations_observed = 25.3229   # Total observed mutations (over 4.375 years)
-neutral_fraction = 0.3               # Overall neutral fraction set to 30%
+total_mutations_observed per year = 25.3229   # Total observed mutations (over 4.375 years)
+neutral_fraction = 0.2               # Overall neutral fraction set to 20%
 
 # Calculate mutation rate and branch length
 mutation_rate_per_site_per_year = total_mutations_observed / simulation_years / sequence_length
 neutral_mutation_rate = mutation_rate_per_site_per_year * neutral_fraction
-# branch_length = neutral_mutation_rate * simulation_years  # ≈0.00604
-branch_length = 0.003
+# branch_length = neutral_mutation_rate * simulation_years  
+branch_length = 0.0178
 # ----------------------------
 # Phylogenetic tree and model setup
 # ----------------------------
