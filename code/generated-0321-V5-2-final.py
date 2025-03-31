@@ -40,12 +40,12 @@ for i in range(144248):
 # ----------------------------
 # Output and validation
 # ----------------------------
-output_file = "Random-144248-0321-North_America-0.003.fasta"
+output_file = "Random-144248-0321-North_America.fasta"
 with open(output_file, "w") as f:
     for seq_id, seq in mutant_sequences:
         f.write(f">{seq_id}\n{seq}\n")
 
-expected_mutations = branch_length * sequence_length  # ≈0.00604 * 1273 ≈7.7
+expected_mutations = branch_length * sequence_length  
 print(
     f"Generated {len(mutant_sequences)} neutral evolution mutants\n"
     f"Expected average mutations per sequence: {expected_mutations:.1f}\n"
